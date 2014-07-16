@@ -6,5 +6,5 @@ task :default => :test
 
 desc "Run the Test Suite, toot suite"
 task :test do
-  sh "ruby test/test_*"
+  sh "rspec spec/*_spec.rb spec/**/*_spec.rb"
 end
